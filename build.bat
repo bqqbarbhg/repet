@@ -7,7 +7,7 @@ set IgnoreWarn= -wd4100 -wd4101 -wd4189 -wd4706
 set CLFlags= -MT -nologo -Od -W4 -WX -Zi %IgnoreWarn% -D_CRT_SECURE_NO_WARNINGS
 set LDFlags= -opt:ref user32.lib gdi32.lib shell32.lib ws2_32.lib
 
-cl %CLFlags% ../src/repet.cpp -link %LDFlags% -out:repet.exe
+cl %CLFlags% ../src/repet2.cpp -link %LDFlags% -out:repet.exe
 
 cd ..
 
